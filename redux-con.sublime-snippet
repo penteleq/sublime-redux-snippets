@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[
+const ${1:Container} = connect(
+    (state, ownProps) =>
+    {
+        let _selected = _.find(state.configurationLists, (element) => element.key == ownProps.listKey).employees || [];
+
+        return {
+
+        };
+    },
+    (dispatch, ownProps) => {
+        return {
+            onChange: (elementId) => {
+              dispatch({
+                type:           'ADD_EMPLOYEE_TO_LIST',
+              })
+            }
+        }
+    }
+)(${1:Container})
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rdx-conn</tabTrigger>
+    <description>Redux connect snippet</description>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

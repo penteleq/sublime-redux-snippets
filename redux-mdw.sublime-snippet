@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+export default function $1({ dispatch, getState }) {
+  return next => action => {
+
+    ${2: next(action);}
+  };
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rdx-mdw</tabTrigger>
+    <description>Redux middleware snippet</description>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

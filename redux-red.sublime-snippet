@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+export default function ${1:todos}(state = ${2:initialState}, action) {
+    switch(action.type)
+    {
+        $3
+        default:
+            return state;
+        break;
+    }
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>redux-red</tabTrigger>
+    <description>Redux reducer snippet</description>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
